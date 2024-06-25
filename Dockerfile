@@ -1,5 +1,5 @@
 # https://hub.docker.com/_/php
-ARG PHP_CLI_VERSION=7.4-cli-alpine
+ARG PHP_CLI_VERSION=8.2-cli-alpine
 # https://hub.docker.com/r/mlocati/php-extension-installer
 ARG PHP_EXTENSION_INSTALL_VERSION=latest
 # https://hub.docker.com/r/composer/composer
