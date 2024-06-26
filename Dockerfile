@@ -11,7 +11,7 @@ FROM mlocati/php-extension-installer:$PHP_EXTENSION_INSTALL_VERSION AS php-exten
 FROM composer/composer:$COMPOSER_VERSION AS composer
 
 # 开始构建
-FROM atomhub.openatom.cn/amd64/php:$PHP_CLI_VERSION
+FROM php:$PHP_CLI_VERSION
 
 # 系统依赖安装
 COPY --from=php-extension-installer /usr/bin/install-php-extensions /usr/local/bin/
